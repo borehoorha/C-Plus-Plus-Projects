@@ -1,5 +1,7 @@
-#include<iostream>
-#include<windows.h>
+#include <iostream>
+#include <string>
+#include <algorithm>
+#include<conio.h>//console input output
 
 using namespace std;
 
@@ -11,7 +13,7 @@ int main(){
   wronginput:
     cout<<"What do you wanna do \nEncrypt or Decrypt \n-->";
   cin>>whattodo;
-  if(whattodo=="encrypt" || whattodo=="Encrypt" || whattdo=="e"){
+  if(whattodo=="encrypt" || whattodo=="Encrypt" || whattodo=="e"){
         string abc;
         int n;
         cout << "Input any integer b/w 1 to 5 and then your string/plaintext: ";
@@ -40,7 +42,7 @@ int main(){
 
 string encrypt(string s1, int n){
   string enc="";
-  for(int i=0;i<s1.size();i++{
+  for(int i=0;i<s1.size();i++){
     char ch = s1[i] + i + n;
     enc += ch;
     n++;
@@ -50,7 +52,7 @@ string encrypt(string s1, int n){
       
 string decrypt(string s1, int n){
   string enc="";
-  for(int i=0;i<s1.size();i++{
+  for(int i=0;i<s1.size();i++){
     char ch = s1[i] - i - n;
     enc += ch;
     n++;
