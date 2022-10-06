@@ -13,22 +13,21 @@ int main(){
   wronginput:
     cout<<"What do you wanna do \nEncrypt or Decrypt \n-->";
   cin>>whattodo;
+  string abc;
+  int n;
   if(whattodo=="encrypt" || whattodo=="Encrypt" || whattodo=="e"){
-        string abc;
-        int n;
         cout << "Input any integer b/w 1 to 5 and then your string/plaintext: ";
         cin>>n;
-        getline(cin,abc);
+        cin>>abc;
         string enc = encrypt(abc, n);
         cout << "\nEncrypted text is: " << enc << endl;
         getch();
     }
     else if(whattodo=="decrypt" || whattodo=="Decrypt" || whattodo=="d"){
-        string abc;
-        int n;
+        
         cout << "Enter the Special key then your string: ";
         cin>>n;
-        getline(cin,abc);
+        cin>>abc;
         string dec = decrypt(abc, n);
         cout << "\nDecrypted text is: " << dec << endl;
         getch();
