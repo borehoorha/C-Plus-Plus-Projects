@@ -1,0 +1,12 @@
+Cryptography 
+
+First Input
+
+Enter what you wanna do encrypt a text or decrypt a text:
+For encryption : e || encryption || Encryption
+For decryption : d || decryption || Decryption
+Then:
+Key 
+Your_TEXT
+
+Save your KEY with yourself
